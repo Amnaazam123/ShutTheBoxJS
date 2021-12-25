@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shut the Box</title>
+    <link rel="stylesheet" href="shutTheBoxStyle.css">
+    <script src="shutTheBoxJS.js" defer></script>
+</head>
+<body>
+    <h1>Shut the Box</h1>
+    <h2>The Rules</h2>
+    <ol>
+        <li>Each turn, you roll the dice (or die) and select one or more boxes which sum to roll of your value.</li>
+        <li>You will not be allowed to pick the boxes which you choose on subsequent turns.</li>
+        <li>When the sum of boxes which are left is less than or equal to six, you'll only roll a single dice.</li>
+        <li>When you cannot make a move or you give up, the sum of boxes which are left give you score.</li>
+        <li>Lower scores are better and a score of 0 is called shutting the box.</li>
+    </ol>
+    <h2>Dice Roll</h2>
+    <div class="rollDice">
+        <button id="roll">Roll Dice</button>
+        <span>Result:</span> 
+        <span id="rollResult1"></span>
+        <span id="rollResult2"></span>
+    </div>
+    <h2>Box Selection</h2>
+    <div class="cb">1<input type="checkbox" id="1" value="1" class="checkBox"></div>
+    <div class="cb">2<input type="checkbox" id="2" value="2" class="checkBox"></div>
+    <div class="cb">3<input type="checkbox" id="3" value="3" class="checkBox"></div>
+    <div class="cb">4<input type="checkbox" id="4" value="4" class="checkBox"></div>
+    <div class="cb">5<input type="checkbox" id="5" value="5" class="checkBox"></div>
+    <div class="cb">6<input type="checkbox" id="6" value="6" class="checkBox"></div>
+    <div class="cb">7<input type="checkbox" id="7" value="7" class="checkBox"></div>
+    <div class="cb">8<input type="checkbox" id="8" value="8" class="checkBox"></div>
+    <div class="cb">9<input type="checkbox" id="9" value="9" class="checkBox"></div>
+    <div class="rollDice">
+        <button id="submit">Submit Box Selection</button>
+        <button id="giveup">I give up I can't make valid move</button>
+    </div>
+    <br>
+    <div id="over" style="color: red; font-weight: bold;"></div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+    margin: 5%;
+}
+li{
+    list-style-type:lower-roman;
+}
+.rollDice{
+    border: 1px solid black;
+    padding: 1%;
+}
+.cb{
+    display: inline-block;
+    width: 22px;
+}
